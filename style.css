@@ -1,10 +1,22 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hleft img {
+    max-width: 120px;
+    height: auto;
+    border: none;
+
+}
 .header, .awesome {
     background-color: #1F2937;
 }
@@ -44,6 +56,7 @@ a, .abody {
     flex-direction: column;
     width: 600px;
     height: auto;
+    justify-content: center;
 }
 
 .ahead {
@@ -69,12 +82,13 @@ button {
 
 .apicture {
     display: flex;
-    background-color: grey;
-    color: #E5e7EB;
-    width: 700px;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
+    flex: none;
+}
+
+.apicture img {
+    height: 300px;
+    width: auto;
+    border: none;
 }
 
 .random {
@@ -94,21 +108,21 @@ button {
 
 .rbody {
     display: flex;
-    gap: 60px;
+    gap: 40px;
     justify-content: center;
 }
 
 img {
     margin: 0 auto;
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 240px;
     border-radius: 12px;
     border: 4px solid #3882F6;
     font-size: 18px;
 }
 
 .pic {
-    width: 160px;
+    width: 240px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -161,12 +175,15 @@ img {
 
 .stext {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .sbox button {
     display: flex;
     flex: none;
-    border: 4px solid #F9FAF8;
+    border: 3px solid #F9FAF8;
     border-radius: 8px;
     padding: 8px 32px;
     font-size: 18px;
@@ -190,6 +207,6 @@ img {
     display: flex;
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 40px 160px;
+    padding: 20px 160px;
     justify-content: center;
 }
